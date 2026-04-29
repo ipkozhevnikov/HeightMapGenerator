@@ -109,14 +109,14 @@ namespace orthoplane
 
             // Параметры камеры
             AddLabel("Высота камеры по оси Z:", 180, 80);
-            var numHeight = AddNumericUpDown(1.0m, 0.1m, 10.0m, 400, 80);
+            var numHeight = AddNumericUpDown(1.0m, 0.1m, 10.0m, 450, 80);
 
             AddLabel("Угол отклонения камеры от оси Z:", 180, 120);
-            var numTilt = AddNumericUpDown(-135m, -180m, 180m, 400, 120);
+            var numTilt = AddNumericUpDown(-135m, -180m, 180m, 450, 120);
             numTilt.Increment = 5;
 
             AddLabel("Фокусное расстояние камеры (мм):", 180, 160);
-            var numFocal = AddNumericUpDown(2.8m, 1.0m, 10.0m, 400, 160);
+            var numFocal = AddNumericUpDown(7m, 1.0m, 10.0m, 450, 160);
 
             var picOriginals = new PictureBox[4];
             Size size = new Size(150, 150);
